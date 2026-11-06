@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="app.css">
+	<title>Escapa de Epstein</title>
+</head>
+<body>
+
+	<h1>Escapa de Epstein</h1>
+	<div id="config">
+		<label>
+			Velocidad del jugador
+			<input type="range" id="velJugador" min="10" max="100" step="10" value="40">
+		</label>
+		<label>
+			Velocidad del enemigo
+			<input type="range" id="velEnemigo" min="1" max="5" step="0.5" value="1">
+		</label>
+		<label>
+			Fondo
+			<select id="fondo">
+				<option value="">Ninguno</option>
+				<option value="fondo1.jpg">Fondo 1</option>
+				<option value="fondo2.jpg">Fondo 2</option>
+				<option value="fondo3.webp">Fondo 3</option>
+			</select>
+		</label>
+	</div>
+ 
+	<div id="game-area">
+		<div id="player" class="character"></div>
+		<div id="beyonce" class="character"></div>
+	</div>
+
+	<script type="text/javascript" src="app.js"></script>
+
+</body>
+</html>
